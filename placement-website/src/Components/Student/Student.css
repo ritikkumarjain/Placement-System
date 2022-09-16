@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.students-container {
+    height: auto;
+    width: 90%;
+    position: relative;
+    margin: 100px auto;
+    /* border: 1px solid red; */
+}
+
+
+
+.students-container-main-card{
+    margin: 10px auto;
+    /* width: 80%; */
+    /* border: 1px solid blue; */
+    /* overflow:scroll ; */
+    display: flex;
+
+}
+
+.news-header-card {
+    height: 100px; 
+    z-index: 0;
+}
+
+@media screen and (max-width: 480px){
+    .students-container-main-card {
+            display:block;
+            align-items: center;
+            width: 90%;
+        }
+
+        .students-container {
+            margin: 65px auto;
+        }
+      
+}

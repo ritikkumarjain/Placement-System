@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.loginPage-title {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: var(--lightBlack);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    color: var(--white);
+}
+
+.signupPage-title {
+    margin: 0;
+    padding: 8px;
+    overflow: hidden;
+    background-color: var(--lightBlack);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    color: var(--white);
+    display: flex;
+    justify-content: space-around;
+
+}
+
+@media screen and (max-width: 480px) {
+    .loginPage-title {
+            padding: 5px;
+        }
+}

@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.coordinator-container {
+    height: auto;
+    width: 90%;
+    position: relative;
+    margin: 100px auto;
+    /* border: 1px solid red; */
+}
+
+.news-header-card {
+    height: 100px;
+    z-index: 0;
+}
+
+.coordinator-container-main-card {
+    margin: 10px auto;
+    /* width: 80%; */
+    /* border: 1px solid blue; */
+    /* overflow:scroll ; */
+    display: flex;
+
+}
+
+@media screen and (max-width: 480px) {
+    .coordinator-container-main-card {
+            display: block;
+            align-items: center;
+            width: 90%;
+        }
+    
+        .coordinator-container {
+            margin: 65px auto;
+        }
+
+}

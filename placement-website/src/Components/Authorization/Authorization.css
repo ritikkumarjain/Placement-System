@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.auth-container {
+    height: 90vh;
+    width: 90%;
+    position: relative;
+    margin: 0 auto;
+    /* border: 1px solid red; */
+    
+}
+
+.auth-container-main {
+    width: 90%;
+    margin: 0 auto;
+    /* text-align: center; */
+
+}
+
+.auth-container-main-card {
+    /* margin-left: 100px; */
+    /* border: 1px solid red; */
+    text-align: left;
+    width: 94%;        
+    margin: 0 auto;
+}
+

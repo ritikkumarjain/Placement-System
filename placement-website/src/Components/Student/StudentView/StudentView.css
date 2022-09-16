@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.student-create-container{
+    height: 100%;
+    width:90%;
+    margin: 0 auto;
+    margin-top: 70px;
+    
+} 
+
+
+.submit-reset-buttons{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.submit-reset-buttons button{
+    margin: 0px 5px;
+}
+
+.alert-box{
+    width: 90%;
+    margin:0 auto;
+    text-align: center;
+}
+
+/* 
+.details-table{
+    width: 60%;
+    margin: 0 auto;
+}
+ */
+
+ @media screen and (max-width: 480px){
+    .student-create-container {
+            margin-bottom: 100px;
+        }
+ }

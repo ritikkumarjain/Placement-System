@@ -1,0 +1,59 @@
+
+
+* {
+    margin: 0;
+}
+
+.header-container{
+    margin: 0;
+    overflow: hidden;
+    background-color: var(--lightBlack);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    color: var(--white);
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 50px 5px 50px;
+    z-index: 1;
+}
+
+.stack {
+    display: block;
+    color: var(--white);
+    text-align: center;
+    text-decoration: none;
+}
+
+.header-buttons:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #04aa6d;
+}
+
+.header-title{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 5px 5px;
+    text-decoration: none;
+}
+
+.clear {
+    clear: both;
+}
+
+.float_Center{
+    margin: "auto";
+    text-align: center;
+}
+
+.signup-title{
+    margin-top:150px;
+}
+
+/* @media screen (min-width: 480px) {
+    
+} */
