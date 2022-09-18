@@ -111,26 +111,17 @@ namespace CoordinatorsMicroservices.Tests
             Assert.AreEqual(200, response.StatusCode);
         }
 
-        [Ignore("Cant understand ")]
         [Test]
         public void ViewSingleStudentDetails_TakesUniversityIdAndRegistrationNumberAsInput_ReturnsNotFoundResult()
         {
             var universityId = "12345678900";
             var registrationNumber = "123456789";
-            var result = new StudentsPlacementDetails()
-            {
-                UniversityId = "12345678900",
-                RegistrationNumber = "123456789",
-                PlacementCompanyI = "NA",
-                PlacementCompanyII = "NA",
-                PlacementTypeI = "NA",
-                PlacementTypeII = "NA"
-            };
+            
 
-            mock.Setup(m => m.ViewSingleStudentDetails(universityId, registrationNumber)).Returns(result);
+            mock.Setup(m => m.ViewSingleStudentDetails(universityId, registrationNumber)).Returns(()=>null);
             var response = _coordinatorsController.ViewSingleStudentDetails(universityId, registrationNumber) as NotFoundResult;
 
-            Assert.IsNull(response);
+            Assert.IsNotNull(response);
             Assert.AreEqual(404, response.StatusCode);
         }
 

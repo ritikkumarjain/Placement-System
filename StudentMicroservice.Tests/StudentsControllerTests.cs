@@ -130,7 +130,7 @@ namespace StudentMicroservice.Tests
 
         }
 
-        [Ignore("Difficult in understanding the problem")]
+        //[Ignore("Difficult in understanding the problem")]
         [Test]
         public void ViewStudentsData_TakesUniversityIdAndRegistrationNumberAsInput_ReturnsResult()
         {

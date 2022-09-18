@@ -46,7 +46,7 @@ namespace CoordinatorsMicroservice.Controllers
         public IActionResult ViewSingleStudentDetails(string UniversityId, string RegistrationNumber)
         {
             var result = _coordinatorsService.ViewSingleStudentDetails(UniversityId, RegistrationNumber);
-            if (result.Equals(null))
+            if (result == null)
             {
                 return NotFound();
             }
